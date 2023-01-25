@@ -1,0 +1,28 @@
+git_cs113_learning
+
+CLI 101
+
+    command prompt
+        $ mkdir "name"  # สร้าง directory
+        $ dir           # ดูรายการในโฟรเดอร์ปัจจุบัน
+        $ cd "name"     # ไปโฟรเดอร์
+        $ cd ..         # ย้อนกลับไปโฟรเดอร์ก่อนหน้า
+        $ cd /          # ไปที่ รูท directory
+
+คำสั่ง git init
+    ** ทำทุกครั้งที่สร้าง repository **
+
+คำสั่ง git config
+    ตั้งค่าชื่อผู้ใช้และอีเมล
+    $ git config user.name "Your Name"
+    $ git config user.email "YourEmail@ku.th"
+    ** ถ้าเป็นเครื่องส่วนตัว ให้เพิ่ม --global ด้วย
+
+คำสั่ง git status
+    ใช้ตรวจสอบสถานะของไฟล์ที่เปลี่ยนแปลงใน git repository
+
+คำสั่ง git add 
+    เพิ่มไฟล์เข้าใน staging area เพื่อรอ commit 
+    
+    $ git add . # ใช้สำหรับแอดทุกไฟล์
+    
