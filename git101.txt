@@ -25,6 +25,7 @@ CLI 101
     เพิ่มไฟล์เข้าใน staging area เพื่อรอ commit 
     
     $ git add . # ใช้สำหรับแอดทุกไฟล์
+
 คำสั่ง git commit 
     commit เพื่อเก็บไฟล์ในรูปคล้าย ๆ กับจุดเซฟหรือ checkpoint
 
@@ -36,12 +37,14 @@ CLI 101
     ดู Checkpoint ทั้งหมด
     $ git log --all --decorate --oneline --graph
 
-คำสั่ง git remote add
+คำสั่ง git remote 
     เชื่อม local repository 
     $ git remote add origin <git-url>
 
     ถ้าพิมพ์ชื่อ repository ผิด ให้ลบชื่อเก่าก่อน ด้วยคำสั่ง $ git remote remove origin
     แล้ว remote add อีกที
+    ใช้ตรวจสอบว่า repository ถูกต้องไหม
+    $ git remote get-url origin 
 
 คำสั่ง git push
     **** Github มีนโยบายเปลี่ยนชื่อ default repository จาก master เป็น main ****
