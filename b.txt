@@ -1,4 +1,6 @@
-#include <stdio.h>
+#include <stdio.h> // not stdio.h
+
+int helloWolrd(int n);
 
 int main (){
 
