@@ -2,6 +2,7 @@
 
 int HelloiSekai(int n);
 
+
 int main (){
 
     printf("Hello git world");
