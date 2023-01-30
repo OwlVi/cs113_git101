@@ -1,4 +1,7 @@
-#include <stdio.h>
+#include <stdio.h> // not lib.h 
+
+int HelloiSekai(int n);
+
 
 int main (){
 
