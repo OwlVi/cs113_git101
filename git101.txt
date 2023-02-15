@@ -78,8 +78,27 @@ CLI 101
     โดยทำได้ 2 แบบคือ
     1. $ git checkout <commit-id>               >>>> นำกลับมาทั้งหมด
     2. $ git checkout <commit-id> <filename>    >>>> นำกลับมาบางไฟล์
+    สามารถใช้ไปยัง branch ที่เราสร้างแยกขึ้นมาอีกด้วย
 
 คำสั่ง git clone 
     ใช้สำหรับตอนที่เปลี่ยนเครื่องหรือลบ local repository ไปแล้ว
     อยากจะนำสิ่งที่เก็บไว้ในเซิฟเวอร์มาทำต่อ
     $ git clone <git-url> **git-url หาได้จากปุ่ม code
+
+คำสั่ง git branch
+    คำสั่งใช้สำหรับการสร้างพื้นที่จำลอง อาจใช้ในกรณีทดสอบ Code ก่อนนำเข้าสู่ main โปแกรม
+
+การ merge branch แบบไม่มี conflict
+    ใช้คำสั่ง git checkout ไปยัง main 
+    แล้วใช้คำสั่ง $ git merge "name"
+    เพื่อเป็นการรวม branch เข้าสู่ main โปรแกรม
+
+การ merge แบบมี conflict
+    ในกรณีที่มีการเขียนไฟล์ทับการหรือ Code ไม่ตรงกันในบรรทัดเดียวกันแต่คนละเครื่อง
+    หรือก็คือการทำงานร่วมกับผู้อื่นแล้วเกิดปัญหาตอน merge
+    ให้สั่งเกตเนื้อหาที่เกิดขึ้นในหน้าจอแล้วแก้ไข
+    ***เพิ่มเติม https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line***
+
+การ Pull แบบมี Conflict
+    ในกรณีที่มีการอัพเดทไฟล์จากอีกที่นึงเข้าสู่ Github แล้วเราแก้ไขไฟล์ที่อยู่ภายในเครื่องของตัวเอง
+    จะเกิดปัญหาไฟล์ไม่ตรงกัน ให้แก้ไข conflict ในไฟล์จากนั้นสร้าง commit แล้ว push ไปที่ github
